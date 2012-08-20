@@ -1,60 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Rayliu.github.com by rayliu</title>
+<head>
+  <title>
+    Hello CoffeeScript Tutorial
+  </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="docs/docco.css">
+</head>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Rayliu.github.com</h1>
-        <p></p>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="docs">
+            <h1>
+              Hello CoffeeScript
+            </h1>
+          </th>
+          <th class="code"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="section-1">
+          <td class="docs">
+            <p>
+              <strong>Hello CoffeeScript</strong> is a simple <a href="http://coffeescript.org/">CoffeeScript</a> tutorial comprised of self-explanatory "hello world" examples of increasing complexity. It was designed to provide a smoother transition from zero to the popular <a href="http://coffeescript.org/">Todos example</a>.
+            </p>
 
+            <p>
+               CoffeeScript is a <a href='http://en.wikipedia.org/wiki/CoffeeScript'>programming language</a> that transcompiles to JavaScript. The language adds syntactic sugar inspired by Ruby, Python and Haskell to enhance JavaScript's brevity and readability, and add more sophisticated features like list comprehension and pattern matching. 
+            </p>
 
-        <p class="view"><a href="https://github.com/rayliu">View My GitHub Profile</a></p>
+            <p>
+              The tutorial starts with a minimalist online view sample, and progressively introduces Functions, Classes, Inheritance, and Super.
+            </p>
 
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+            <p style='background:#ffffaa; padding:10px; text-align:center; font-size:120%; font-weight:bold;'>
+              <a href='docs/HelloWorldDoc.html' style='color:blue;'>Start the tutorial</a>
+            </p>
+            <p>
+              Once in the tutorial, use the navigation menu in the top-right corner to view other examples. Example numbers are in order of increasing complexity.
+            </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <p>&nbsp;</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+             
+<!-- Twitter link -->
+<div style="float:left; margin-bottom:40px;">
+<img style="margin:8px; margin-right:10px;" height="48" src="https://secure.gravatar.com/avatar/d83ab667b8e6f0619be97572f5336c91?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48"></div> <div style="background:rgb(245,245,255); padding:10px;">I'm a software engineer.
+ I tweet about coding and IT solutions at sina weibo(tweet of china): <a target="_blank" href="http://weibo.com/rayliu">@rayliu</a> </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+          </td>
+          <td class="code">
+            <p style='color:black;'>
+              The only non-Javascript part of the examples is the following HTML template:
+            </p>
+            <pre style='color:#777;'>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Hello CoffeeScript&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src=&quot;http://code.jquery.com/jquery-1.8.0.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://jashkenas.github.com/coffee-script/extras/coffee-script.js&quot;&gt;&lt;/script&gt;
 
-<h3>Designer Templates</h3>
+    &lt;script src=&quot;...number.js...&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+            </pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<a href="https://github.com/rayliu/Hello-CoffeeScript"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+</body>
 </html>
