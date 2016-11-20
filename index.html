@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>
-    Hello CoffeeScript Tutorial
-  </title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="docs/docco.css">
-</head>
+  <head>
+    <title>Starter Kit</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-<body>
-  <div id="container">
-    <div id="background"></div>
-    <table cellpadding="0" cellspacing="0">
-      <thead>
-        <tr>
-          <th class="docs">
-            <h1>
-              Hello CoffeeScript
-            </h1>
-          </th>
-          <th class="code"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="section-1">
-          <td class="docs">
-            <p>
-              <strong>Hello CoffeeScript</strong> is a simple <a href="http://coffeescript.org/">CoffeeScript</a> tutorial comprised of self-explanatory "hello world" examples of increasing complexity. It was designed to provide a smoother transition from zero to the popular <a href="http://documentcloud.github.com/backbone/#examples-todos">Todos example</a> with <a href="http://documentcloud.github.com/backbone">Backbone.js</a>.
-            </p>
+    <!-- This snippet is used to setup Simpla on your site -->
+    <script src="https://app.simpla.io"></script>
+    <script>
+      // Replace 'PROJECT-KEY' with your API key
+      // You can get your project's API key from https://simpla.io
+      Simpla('BJ5ADWkMx');
+    </script>
 
-            <p>
-               CoffeeScript is a <a href='http://en.wikipedia.org/wiki/CoffeeScript'>programming language</a> that transcompiles to JavaScript. The language adds syntactic sugar inspired by Ruby, Python and Haskell to enhance JavaScript's brevity and readability, and add more sophisticated features like list comprehension and pattern matching. 
-            </p>
+  </head>
+  <body>
 
-            <p>
-              The tutorial starts with a minimalist online view sample, and progressively introduces Functions, Classes, Inheritance, and Super.
-            </p>
+    <section class="splash">
 
-            <p style='background:#ffffaa; padding:10px; text-align:center; font-size:120%; font-weight:bold;'>
-              <a href='docs/HelloWorldDoc.html' style='color:blue;'>Start the tutorial</a>
-            </p>
-            <p>
-              Once in the tutorial, use the navigation menu in the top-right corner to view other examples. Example numbers are in order of increasing complexity.
-            </p>
+      <!-- Rather than hard-coding the content of this <h1>, we can
+           use <simpla-text> inside it to provide editable content. -->
+      <h1 class="splash__title"><simpla-text sid="splash-title"></simpla-text></h1>
 
-            <p>&nbsp;</p>
+      <!-- Every Simpla element needs a unique ID, which we provide in
+           an sid (Simpla ID) attribute on the element.   -->
+      <h2 class="splash__subtitle"><simpla-text sid="splash-subtitle"></simpla-text></h2>
 
-             
-<!-- Twitter link -->
-<div style="float:left; margin-bottom:40px;">
-<img style="margin:8px; margin-right:10px;" height="48" src="https://secure.gravatar.com/avatar/d83ab667b8e6f0619be97572f5336c91?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48"></div> <div style="background:rgb(245,245,255); padding:10px;">I'm a software engineer.
- I tweet about coding and IT solutions at sina weibo(tweet of china): <a target="_blank" href="http://weibo.com/ray56">@ray56</a> </div>
+    </section>
 
-          </td>
-          <td class="code">
-            <p style='color:black;'>
-              The only non-Javascript part of the examples is the following HTML template:
-            </p>
-            <pre style='color:#777;'>
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Hello CoffeeScript&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script src=&quot;http://code.jquery.com/jquery-1.8.0.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;http://jashkenas.github.com/coffee-script/extras/coffee-script.js&quot;&gt;&lt;/script&gt;
+    <section class="features">
 
-    ...body content...
-  &lt;/body&gt;
-  &lt;/html&gt;
-            </pre>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <!-- We can structure our data with the <simpla-block> element.
+           <simpla-block> creates a new namespace, which means the sid's
+           of Simpla elements inside it are scoped to that block  -->
+      <simpla-block sid="feature-1" class="feature">
 
-<a href="https://github.com/rayliu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+        <!-- <simpla-img> behaves similarly to an <img/>, except it
+             requires both opening and closing tags -->
+        <simpla-img sid="image" class="feature__img"></simpla-img>
 
-</body>
+        <!-- When <simpla-text> is on its own it acts like a container,
+             creating <p>s inside itself. When it's inside another textual
+             element (eg: headings) it only allows line-breaks. -->
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
+
+      </simpla-block>
+
+      <simpla-block sid="feature-2" class="feature">
+
+        <!-- We can use the same SIDs here as before, since they
+             are scoped to this <simpla-block>  -->
+        <simpla-img sid="image" class="feature__img"></simpla-img>
+
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
+
+      </simpla-block>
+
+      <!-- Since the content inside a <simpla-block> is determined by
+           its SID, you can change whole sections or pages of content
+           by just wrapping it in a <simpla-block> and changing the SID -->
+      <simpla-block sid="feature-3" class="feature">
+
+        <simpla-img sid="image" class="feature__img"></simpla-img>
+
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
+
+      </simpla-block>
+
+    </section>
+
+    <!-- Next steps:
+          - Open this file in your browser
+          - Add #edit to the end of the URL
+          - Login and start editing content -->
+
+    <!-- Want to learn more? Head to https://simpla.io/docs -->
+
+  </body>
 </html>
